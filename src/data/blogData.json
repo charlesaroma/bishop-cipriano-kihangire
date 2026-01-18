@@ -1,0 +1,40 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Celebrating 25 Years of Excellence: BCK@25 Silver Jubilee",
+            "excerpt": "Join us as we mark a quarter-century of holistic education, spiritual growth, and academic brilliance. The Silver Jubilee celebrations kicked off with a grand mass led by the Archbishop.",
+            "category": "School Events",
+            "date": "March 15, 2025",
+            "author": "Dr. Joseph Okello",
+            "imagePlaceholder": "Jubilee Celebration Image"
+        },
+        {
+            "id": 2,
+            "title": "Digital Democracy: Introducing Our High-Tech E-Voting System",
+            "excerpt": "Say goodbye to paper ballots. We are proud to launch a fully digital, transparent, and biometric-ready e-voting system for our student leadership elections.",
+            "category": "Innovation",
+            "date": "February 10, 2025",
+            "author": "IT Department",
+            "imagePlaceholder": "E-Voting Demo Image"
+        },
+        {
+            "id": 3,
+            "title": "Outstanding Performance in UACE 2024 Examinations",
+            "excerpt": "We are thrilled to announce that 90% of our candidates have qualified for university admission on government sponsorship. Congratulations to the class of 2024!",
+            "category": "Academics",
+            "date": "January 28, 2025",
+            "author": "Academic Registrar",
+            "imagePlaceholder": "Students Celebrating"
+        },
+        {
+            "id": 4,
+            "title": "Sports Gala 2025: The Tigers Take the Trophy!",
+            "excerpt": "A weekend of intense competition saw the Tigers house engaging in a fierce battle to claim the championship trophy at our annual Sports Gala.",
+            "category": "Co-Curricular",
+            "date": "April 02, 2025",
+            "author": "Sports Director",
+            "imagePlaceholder": "Sports Trophy"
+        }
+    ]
+}

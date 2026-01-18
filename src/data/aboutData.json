@@ -1,0 +1,79 @@
+{
+    "school": {
+        "title": "A Legacy of Excellence",
+        "subtitle": "Located in Bbiina-Luzira, Bishop Cipriano Kihangire SSS is a Mixed Day and Boarding school committed to holistic education.",
+        "mission": "To provide quality education that empowers students with knowledge, skills, and values for self-reliance and national development.",
+        "vision": "To be a model school in academic excellence and moral integrity.",
+        "campusFeatures": [
+            {
+                "title": "Modern Infrastructure",
+                "desc": "State-of-the-art classrooms and labs."
+            },
+            {
+                "title": "Spiritual Growth",
+                "desc": "Rooted in Catholic values while welcoming all faiths."
+            },
+            {
+                "title": "Holistic Development",
+                "desc": "Focus on discipline, sports, and arts."
+            }
+        ]
+    },
+    "background": {
+        "founder": {
+            "name": "Bishop Cipriano Kihangire",
+            "life": "1918 – 1990",
+            "bio": "A visionary leader who believed that 'Poverty and ignorance combined are a double tragedy'. His legacy lives on through the educational institutions he inspired."
+        },
+        "patron": {
+            "name": "Father John Scalabrini",
+            "role": "Patron & Benefactor",
+            "bio": "Continuing the work of Bishop Cipriano, Fr. John Scalabrini founded the Emmaus Foundation to support the school and the community."
+        },
+        "timeline": [
+            {
+                "year": "1999",
+                "event": "Foundation of the School",
+                "desc": "BCK SSS opens its doors to the first intake of students."
+            },
+            {
+                "year": "2005",
+                "event": "Expansion Phase",
+                "desc": "New boarding facilities and science laboratories commissioned."
+            },
+            {
+                "year": "2015",
+                "event": "Academic Excellence",
+                "desc": "The school consistently ranks in the top 10% nationally."
+            },
+            {
+                "year": "2025",
+                "event": "Silver Jubilee",
+                "desc": "Celebrating 25 years of service and digital innovation."
+            }
+        ]
+    },
+    "management": {
+        "emmaus": {
+            "title": "The Emmaus Foundation",
+            "desc": "The school is governed under the umbrella of the Emmaus Foundation, ensuring sustainable growth and adherence to our core values."
+        },
+        "leadership": [
+            {
+                "name": "Dr. Joseph Okello",
+                "role": "Headteacher",
+                "bio": "Leading with over 20 years of educational experience."
+            },
+            {
+                "name": "Board of Governors",
+                "role": "Governance",
+                "bio": "A dedicated team of professionals guiding the school's strategic direction."
+            },
+            {
+                "name": "PTA Executive",
+                "role": "Community Link",
+                "bio": "Bridging the gap between parents and school administration."
+            }
+        ]
+    }
+}

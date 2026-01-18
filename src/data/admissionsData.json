@@ -1,0 +1,111 @@
+{
+    "requirements": [
+        {
+            "id": "req-1",
+            "item": "A filled application form",
+            "note": "Digital or Physical"
+        },
+        {
+            "id": "req-2",
+            "item": "Result Slips",
+            "note": "PLE for S.1, UCE for S.5 (Original + Photocopies)"
+        },
+        {
+            "id": "req-3",
+            "item": "3 Recent Passport Photos",
+            "note": "Color, white background"
+        },
+        {
+            "id": "req-4",
+            "item": "Recommendation Letter",
+            "note": "From former school headteacher"
+        },
+        {
+            "id": "req-5",
+            "item": "Curriculum Essentials",
+            "note": "24 Counter Books, Mathematical Set, Graph Book"
+        },
+        {
+            "id": "req-6",
+            "item": "Medical Form",
+            "note": "Signed by a government medical officer"
+        }
+    ],
+    "formSections": [
+        {
+            "title": "Student Information",
+            "fields": [
+                {
+                    "name": "firstName",
+                    "label": "First Name",
+                    "type": "text"
+                },
+                {
+                    "name": "lastName",
+                    "label": "Last Name",
+                    "type": "text"
+                },
+                {
+                    "name": "dob",
+                    "label": "Date of Birth",
+                    "type": "date"
+                },
+                {
+                    "name": "gender",
+                    "label": "Gender",
+                    "type": "select",
+                    "options": [
+                        "Male",
+                        "Female"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Academic Background",
+            "fields": [
+                {
+                    "name": "formerSchool",
+                    "label": "Former School",
+                    "type": "text"
+                },
+                {
+                    "name": "level",
+                    "label": "Applying For",
+                    "type": "select",
+                    "options": [
+                        "S.1",
+                        "S.2",
+                        "S.3",
+                        "S.5 (Arts)",
+                        "S.5 (Sciences)"
+                    ]
+                },
+                {
+                    "name": "aggregates",
+                    "label": "Aggregates/Points",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "title": "Documents Upload",
+            "description": "Please upload clear scans or photos.",
+            "fields": [
+                {
+                    "name": "passportPhotos",
+                    "label": "Passport Photos (3)",
+                    "type": "file",
+                    "accept": "image/*",
+                    "multiple": true
+                },
+                {
+                    "name": "resultSlip",
+                    "label": "Result Slip / Report Card",
+                    "type": "file",
+                    "accept": ".pdf,image/*"
+                }
+            ]
+        }
+    ]
+}

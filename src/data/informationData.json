@@ -1,0 +1,128 @@
+{
+    "curriculum": {
+        "title": "Academic Curriculum",
+        "description": "Our curriculum is designed to foster critical thinking and practical skills, blending the Ugandan National Curriculum with international best practices.",
+        "levels": [
+            {
+                "title": "O-Level (UCE)",
+                "subjects": [
+                    "Mathematics",
+                    "English",
+                    "Physics",
+                    "Chemistry",
+                    "Biology",
+                    "History",
+                    "Geography",
+                    "Literature",
+                    "Religious Education",
+                    "Computer Studies",
+                    "Entrepreneurship"
+                ]
+            },
+            {
+                "title": "A-Level (UACE)",
+                "subjects": [
+                    "Physics",
+                    "Chemistry",
+                    "Biology",
+                    "Mathematics",
+                    "Economics",
+                    "History",
+                    "Geography",
+                    "Literature",
+                    "Divinity",
+                    "General Paper",
+                    "ICT"
+                ]
+            }
+        ],
+        "languages": [
+            "German",
+            "French",
+            "English",
+            "Luganda"
+        ]
+    },
+    "performance": {
+        "title": "Academic Excellence",
+        "intro": "We consistently rank in the top 10% of schools nationally, with a high percentage of students qualifying for university admission on government merit.",
+        "stats": [
+            {
+                "label": "Division 1 (UCE)",
+                "value": "85%"
+            },
+            {
+                "label": "University Admission",
+                "value": "90%"
+            },
+            {
+                "label": "Distinctions / Student",
+                "value": "4.5"
+            }
+        ],
+        "highlights": [
+            "Best performing school in Nakawa Division for 5 consecutive years.",
+            "Produced top students in Mathematics and Sciences nationally."
+        ]
+    },
+    "cocurricular": {
+        "title": "Co-Curricular Activities",
+        "intro": "Beyond the classroom, we nurture talent through a vibrant array of clubs and sports.",
+        "activities": [
+            {
+                "name": "Football Academy",
+                "desc": "Professional coaching and competitive leagues."
+            },
+            {
+                "name": "Music, Dance & Drama",
+                "desc": "Award-winning troupe performing nationally."
+            },
+            {
+                "name": "Hi Skool Kiromo",
+                "desc": "Leading vibrant social and cultural events."
+            },
+            {
+                "name": "Debate Club",
+                "desc": "Fostering eloquence and critical thought."
+            }
+        ]
+    },
+    "facilities": {
+        "title": "World-Class Facilities",
+        "items": [
+            {
+                "name": "Library Resource Centre",
+                "desc": "Digital library management system with thousands of physical and e-books."
+            },
+            {
+                "name": "Science Laboratories",
+                "desc": "Fully equipped Physics, Chemistry, and Biology labs for practical learning."
+            },
+            {
+                "name": "Computer Labs",
+                "desc": "Modern ICT centers with high-speed internet for digital literacy."
+            },
+            {
+                "name": "Sports Center",
+                "desc": "Multipurpose courts for basketball, netball, and volleyball."
+            }
+        ]
+    },
+    "fees": {
+        "title": "Fees Structure",
+        "intro": "We strive to provide premium education at a competitive cost. Fees are paid per term.",
+        "breakdown": [
+            {
+                "category": "Boarding Section",
+                "amount": "UGX 1,415,000",
+                "details": "Includes tuition, accommodation, and meals."
+            },
+            {
+                "category": "Day Section",
+                "amount": "UGX 850,000",
+                "details": "Includes tuition and lunch."
+            }
+        ],
+        "note": "Fees are subject to review by the Board of Governors. Functional fees apply for new students."
+    }
+}

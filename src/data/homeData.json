@@ -1,0 +1,61 @@
+{
+    "hero": {
+        "badge": "Celebrating 25 Years of Excellence",
+        "title": "Bishop Cipriano",
+        "titleHighlight": "Kihangire SSS",
+        "description": "Empowering the next generation through holistic education, discipline, and spiritual growth. Join a legacy of academic excellence and moral integrity.",
+        "primaryCta": "Apply for 2025",
+        "secondaryCta": "Watch Our Story"
+    },
+    "impactStats": [
+        {
+            "id": 1,
+            "label": "Total Enrollment",
+            "value": "2,750+",
+            "desc": "Students",
+            "iconKey": "users"
+        },
+        {
+            "id": 2,
+            "label": "Active Scholarships",
+            "value": "126",
+            "desc": "For 2025",
+            "iconKey": "graduationCap"
+        },
+        {
+            "id": 3,
+            "label": "Alumni Base",
+            "value": "12,000+",
+            "desc": "Since 1999",
+            "iconKey": "bookOpen"
+        },
+        {
+            "id": 4,
+            "label": "National Ranking",
+            "value": "Top 10%",
+            "desc": "UCE Results",
+            "iconKey": "award"
+        }
+    ],
+    "innovationSpotlight": {
+        "tag": "Innovation Spotlight",
+        "titlePrefix": "Reinventing School Democracy through",
+        "titleHighlight": "Digital E-Voting",
+        "description": "Experience the future of student leadership. Our transparent, secure, and instant digital voting system empowers students to choose their leaders with accountability and ease. Promoting transparency since 2025.",
+        "features": [
+            "Real-time Results Processing",
+            "Biometric Verification",
+            "Audit Trail Transparency"
+        ],
+        "cta": "View E-Voting Demo",
+        "participationLabel": "Participation",
+        "participationValue": "98.5%"
+    },
+    "foundersCorner": {
+        "quotePrefix": "Poverty and ignorance combined are a",
+        "quoteHighlight": "double tragedy",
+        "quoteSuffix": ".",
+        "author": "Bishop Cipriano Kihangire",
+        "years": "1918 – 1990"
+    }
+}
