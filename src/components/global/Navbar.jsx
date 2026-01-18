@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
+    const location = useLocation();
+
+    // Determine if we're on the home page
+    const isHomePage = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -67,10 +72,14 @@ const Navbar = () => {
                             className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="flex flex-col">
-                            <span className={`font-serif font-bold text-xl leading-tight transition-colors duration-300 ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+                            <span className={`font-serif font-bold text-xl leading-tight transition-colors duration-300 ${
+                                isHomePage && !scrolled ? 'text-white' : 'text-gray-900'
+                            }`}>
                                 BCK SSS
                             </span>
-                            <span className={`text-[10px] font-medium uppercase tracking-wider transition-colors duration-300 ${scrolled ? 'text-gray-500' : 'text-white/70'}`}>
+                            <span className={`text-[10px] font-medium uppercase tracking-wider transition-colors duration-300 ${
+                                isHomePage && !scrolled ? 'text-white/70' : 'text-gray-500'
+                            }`}>
                                 Excellence Since 1999
                             </span>
                         </div>
@@ -87,11 +96,17 @@ const Navbar = () => {
                             >
                                 <a
                                     href={link.path}
-                                    className={`relative px-4 py-2 text-sm font-semibold transition-all duration-300 flex items-center gap-1 group ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white/90 hover:text-white'}`}
+                                    className={`relative px-4 py-2 text-sm font-semibold transition-all duration-300 flex items-center gap-1 group ${
+                                        isHomePage && !scrolled 
+                                            ? 'text-white/90 hover:text-white' 
+                                            : 'text-gray-700 hover:text-blue-600'
+                                    }`}
                                 >
                                     <span className="relative">
                                         {link.name}
-                                        <span className={`absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${scrolled ? 'bg-gradient-to-r from-blue-600 to-blue-800' : 'bg-white'}`}></span>
+                                        <span className={`absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${
+                                            isHomePage && !scrolled ? 'bg-white' : 'bg-gradient-to-r from-blue-600 to-blue-800'
+                                        }`}></span>
                                     </span>
                                     {link.dropdown && (
                                         <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''}`} />
@@ -129,7 +144,11 @@ const Navbar = () => {
                     <div className="hidden lg:flex items-center">
                         <a
                             href="/admissions/apply"
-                            className={`relative px-6 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden group ${scrolled ? 'bg-gradient-to-r from-blue-600 to-blue-800 text-white' : 'bg-white text-blue-700 hover:bg-blue-50'}`}
+                            className={`relative px-6 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden group ${
+                                isHomePage && !scrolled
+                                    ? 'bg-white text-blue-700 hover:bg-blue-50'
+                                    : 'bg-gradient-to-r from-blue-600 to-blue-800 text-white'
+                            }`}
                         >
                             <span className="relative z-10">Apply Now</span>
                         </a>
@@ -138,7 +157,11 @@ const Navbar = () => {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className={`lg:hidden z-50 p-2 transition-colors duration-300 ${scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-white/80'}`}
+                        className={`lg:hidden z-50 p-2 transition-colors duration-300 ${
+                            isHomePage && !scrolled
+                                ? 'text-white hover:text-white/80'
+                                : 'text-gray-700 hover:text-blue-600'
+                        }`}
                     >
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>

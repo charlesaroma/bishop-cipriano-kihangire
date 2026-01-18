@@ -35,8 +35,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-black text-yellow-400 leading-tight italic"
-                style={{ fontFamily: 'Georgia, serif' }}
+                className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-100 leading-tight italic"
               >
                 SHAPING<br />
                 TOMORROW'S<br />
