@@ -77,7 +77,7 @@ const RequirementsSection = () => {
             {/* Document Requirements */}
             <div>
                 <h2 className="text-3xl font-serif font-bold text-gray-900 mb-8">Required Documents</h2>
-                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">

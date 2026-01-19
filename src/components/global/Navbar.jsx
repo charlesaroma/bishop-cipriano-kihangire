@@ -43,7 +43,8 @@ const Navbar = () => {
             name: 'Student Life',
             path: '/student-life',
             dropdown: [
-                { name: 'Boarding & Day School', path: '/student-life/boarding-day' },
+                { name: 'Boarding Section', path: '/student-life/boarding' },
+                { name: 'Day Scholar Section', path: '/student-life/day-school' },
                 { name: 'Sports & Co-Curricular', path: '/student-life/sports' },
                 { name: 'Clubs & Leadership', path: '/student-life/clubs' },
             ]

@@ -48,10 +48,13 @@ function App() {
           <Route path="academics/*" element={<AcademicsPage section="curriculum" />} />
 
           {/* Student Life Routes */}
-          <Route path="student-life/boarding-day" element={<StudentLifePage section="boarding" />} />
+          <Route path="student-life" element={<StudentLifePage />} />
+          <Route path="student-life/boarding" element={<StudentLifePage section="boarding" />} />
+          <Route path="student-life/day-school" element={<StudentLifePage section="day-school" />} />
           <Route path="student-life/sports" element={<StudentLifePage section="sports" />} />
           <Route path="student-life/clubs" element={<StudentLifePage section="clubs" />} />
-          <Route path="student-life/*" element={<StudentLifePage section="boarding" />} />
+          <Route path="student-life/anthem" element={<StudentLifePage section="anthem" />} />
+          <Route path="student-life/*" element={<StudentLifePage />} />
 
           {/* Facilities Routes - integrated into Academics and Student Life */}
           {/* No separate Facilities top-level routes */}
