@@ -25,7 +25,7 @@ const InnovationSpotlight = () => {
               </span>
               <h2 className="text-4xl font-serif font-bold text-gray-900 mt-4">
                 {innovationSpotlight.titlePrefix}{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-cyan-600">
                   {innovationSpotlight.titleHighlight}
                 </span>
               </h2>
@@ -38,7 +38,7 @@ const InnovationSpotlight = () => {
             <div className="space-y-3">
               {innovationSpotlight.features.map((feature, idx) => (
                 <div key={idx} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-green-600 shrink-0" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}

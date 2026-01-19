@@ -26,7 +26,7 @@ const Hero = () => {
 
             <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight">
               {hero.title}{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">
                 {hero.titleHighlight}
               </span>
             </h1>
@@ -57,7 +57,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent opacity-5"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white to-transparent opacity-5"></div>
     </div>
   )
 }
