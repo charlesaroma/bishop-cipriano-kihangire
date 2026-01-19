@@ -55,7 +55,7 @@ const BoardingSection = () => {
                         The day section offers flexibility for local students while maintaining the same high standards of discipline, care, and academic excellence. Both sections enjoy equal access to all school facilities and co-curricular activities.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Student Support Services</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -206,7 +206,7 @@ const ClubsSection = () => {
                 ))}
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12 text-center">
+            <div className="bg-linear-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12 text-center">
                 <h3 className="text-2xl font-bold mb-4">Leadership Development</h3>
                 <p className="mb-6 max-w-3xl mx-auto leading-relaxed">
                     Through clubs and organizations, students develop leadership skills, discover their passions, and contribute to a vibrant school culture. We believe that co-curricular activities are essential to holistic education.

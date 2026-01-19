@@ -20,7 +20,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col font-sans text-bck-text bg-bck-bg">
       <Navbar />
-      <main className="flex-grow">
+      <main className="grow">
         <Outlet />
       </main>
       <Footer />

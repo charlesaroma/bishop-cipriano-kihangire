@@ -115,9 +115,9 @@ const ContactPage = () => {
                     </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
                     <div className="flex items-start mb-6">
-                        <Building2 className="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" />
+                        <Building2 className="w-8 h-8 text-blue-600 mr-4 shrink-0" />
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-3">Primary Bank Account</h3>
                             <div className="space-y-2 text-gray-800">

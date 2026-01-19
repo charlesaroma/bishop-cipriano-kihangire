@@ -85,43 +85,43 @@ const CatholicIdentityPage = () => {
                 </div>
 
                 {/* Spiritual Formation Programs */}
-                <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-12">
+                <div className="bg-linear-to-r from-blue-50 to-blue-100 rounded-2xl p-12">
                     <h2 className="text-3xl font-serif font-bold text-gray-900 mb-8">
                         Spiritual Formation & Activities
                     </h2>
                     <ul className="space-y-4">
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Daily prayer and Mass attendance for interested students</span>
                         </li>
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Monthly Eucharistic celebrations and retreats</span>
                         </li>
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Religious education integrated into the curriculum</span>
                         </li>
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Community service and outreach programs</span>
                         </li>
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Leadership development rooted in Catholic social teachings</span>
                         </li>
                         <li className="flex items-start">
-                            <span className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                            <span className="shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mr-4 mt-1">
                                 <span className="text-white font-bold text-sm">✓</span>
                             </span>
                             <span className="text-gray-800">Guidance and counseling supporting holistic well-being</span>

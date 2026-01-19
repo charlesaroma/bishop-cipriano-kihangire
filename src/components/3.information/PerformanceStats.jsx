@@ -28,7 +28,7 @@ const PerformanceStats = () => {
                 <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                     {performance.highlights.map((highlight, idx) => (
                         <div key={idx} className="flex items-start bg-white p-5 rounded-xl shadow-sm">
-                            <Star className="w-5 h-5 text-amber-400 mr-3 mt-1 flex-shrink-0" />
+                            <Star className="w-5 h-5 text-amber-400 mr-3 mt-1 shrink-0" />
                             <p className="text-gray-700 font-medium">{highlight}</p>
                         </div>
                     ))}

@@ -25,7 +25,7 @@ const FeesTable = () => {
                             <span className="text-gray-500 ml-2">/ term</span>
                         </div>
                         <div className="flex items-start text-sm text-gray-600">
-                            <BadgeCheck className="w-5 h-5 text-green-500 mr-2 flex-shrink-0" />
+                            <BadgeCheck className="w-5 h-5 text-green-500 mr-2 shrink-0" />
                             {item.details}
                         </div>
                     </div>
@@ -33,7 +33,7 @@ const FeesTable = () => {
             </div>
 
             <div className="bg-amber-50 border border-amber-100 rounded-xl p-4 flex items-start text-amber-800 text-sm">
-                <Info className="w-5 h-5 mr-3 flex-shrink-0 mt-0.5" />
+                <Info className="w-5 h-5 mr-3 shrink-0 mt-0.5" />
                 <p>{fees.note}</p>
             </div>
         </div>

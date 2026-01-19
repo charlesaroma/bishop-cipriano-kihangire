@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-gray-100 mt-20">
+    <footer className="bg-linear-to-b from-gray-900 to-gray-950 text-gray-100 mt-20">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -45,21 +45,21 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-6">Contact Info</h4>
             <div className="space-y-4 text-sm">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium text-gray-300">Location</p>
                   <p className="text-gray-500">Bbiina, Luzira<br/>Kampala, Uganda</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <Phone className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium text-gray-300">Phone</p>
                   <p className="text-gray-500">+256 414 250 404</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
                 <div>
                   <p className="font-medium text-gray-300">Email</p>
                   <p className="text-gray-500">admissions@bck.ac.ug</p>
@@ -128,7 +128,7 @@ const Footer = () => {
       </div>
 
       {/* Top Border Accent */}
-      <div className="h-1 bg-gradient-to-r from-blue-600 via-blue-500 to-transparent"></div>
+      <div className="h-1 bg-linear-to-r from-blue-600 via-blue-500 to-transparent"></div>
 
     </footer>
   )

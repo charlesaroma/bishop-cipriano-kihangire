@@ -77,7 +77,7 @@ const RequirementsSection = () => {
             {/* Document Requirements */}
             <div>
                 <h2 className="text-3xl font-serif font-bold text-gray-900 mb-8">Required Documents</h2>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-12">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
@@ -87,7 +87,7 @@ const RequirementsSection = () => {
                             <ul className="space-y-3">
                                 {requirements && requirements.map((req, idx) => (
                                     <li key={idx} className="flex items-start">
-                                        <CheckCircle2 className="w-5 h-5 text-green-600 mr-3 mt-0.5 flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-green-600 mr-3 mt-0.5 shrink-0" />
                                         <div>
                                             <p className="font-semibold text-gray-800">{req.item}</p>
                                             <p className="text-sm text-gray-600">{req.note}</p>
@@ -132,12 +132,12 @@ const RequirementsSection = () => {
                     <div className="space-y-6">
                         {admissionProcess.map((step, idx) => (
                             <div key={idx} className="flex gap-6">
-                                <div className="flex-shrink-0">
+                                <div className="shrink-0">
                                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-600 text-white font-bold text-lg">
                                         {idx + 1}
                                     </div>
                                 </div>
-                                <div className="flex-grow">
+                                <div className="grow">
                                     <h3 className="text-xl font-bold text-gray-900 mb-2">{step.step}</h3>
                                     <p className="text-gray-600 mb-2">{step.description}</p>
                                     {step.details && (
@@ -158,7 +158,7 @@ const RequirementsSection = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12">
+            <div className="bg-linear-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12">
                 <h2 className="text-2xl font-bold mb-6">Questions?</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div>
@@ -192,13 +192,13 @@ const ApplicationSection = () => {
                             Requirements Checklist
                         </h3>
                         <div className="space-y-2 mb-6 text-sm text-amber-700 bg-amber-50 p-4 rounded-lg flex items-start">
-                            <AlertTriangle className="w-5 h-5 mr-2 flex-shrink-0" />
+                            <AlertTriangle className="w-5 h-5 mr-2 shrink-0" />
                             <p>Ensure you have digital copies of these items before starting.</p>
                         </div>
                         <ul className="space-y-4">
                             {requirements && requirements.map((req) => (
                                 <li key={req.id} className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-3 mt-0.5 shrink-0" />
                                     <div>
                                         <p className="font-semibold text-gray-800">{req.item}</p>
                                         <p className="text-xs text-gray-500">{req.note}</p>

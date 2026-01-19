@@ -59,7 +59,7 @@ const ClassroomsSection = () => {
                         Our specialized laboratories support hands-on learning in sciences and technology, with qualified technicians ensuring student safety and learning outcomes.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Classroom Features</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -106,7 +106,7 @@ const LibrarySection = () => {
                         The E-Library platform provides remote access to digital resources, enabling students and staff to research and learn beyond school hours. Our librarians support research excellence and information literacy.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Library Resources</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -153,7 +153,7 @@ const ICTHubSection = () => {
                         Students gain hands-on experience with programming, web development, digital design, and other IT skills essential for the 21st-century economy.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">ICT Facilities</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -200,7 +200,7 @@ const StadiumSection = () => {
                         Regular maintenance and professional management ensure optimal conditions for training and competition, supporting our athletes' pursuit of excellence.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Stadium Features</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -247,7 +247,7 @@ const AcademicBlockSection = () => {
                         The new academic block will feature modern classrooms, specialized laboratories, collaborative learning spaces, and advanced technology integration, positioning us as a leader in secondary education in Uganda.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-6">Project Features</h3>
                     <ul className="space-y-4">
                         <li className="flex items-start">
@@ -278,7 +278,7 @@ const AcademicBlockSection = () => {
                 </div>
             </div>
 
-            <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12 text-center">
+            <div className="bg-linear-to-r from-blue-600 to-blue-800 text-white rounded-2xl p-12 text-center">
                 <h3 className="text-2xl font-bold mb-4">Investing in the Future</h3>
                 <p className="mb-6 max-w-3xl mx-auto leading-relaxed">
                     The new academic block represents our dedication to providing world-class educational infrastructure. We are grateful for the support of our sponsors, partners, and the school community in realizing this vision.

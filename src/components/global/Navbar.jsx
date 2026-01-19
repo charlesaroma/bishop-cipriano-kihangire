@@ -105,7 +105,7 @@ const Navbar = () => {
                                     <span className="relative">
                                         {link.name}
                                         <span className={`absolute -bottom-1 left-0 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${
-                                            isHomePage && !scrolled ? 'bg-white' : 'bg-gradient-to-r from-blue-600 to-blue-800'
+                                            isHomePage && !scrolled ? 'bg-white' : 'bg-linear-to-r from-blue-600 to-blue-800'
                                         }`}></span>
                                     </span>
                                     {link.dropdown && (
@@ -119,7 +119,7 @@ const Navbar = () => {
                                         activeDropdown === link.name ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
                                     }`}>
                                         <div className="p-2">
-                                            {link.dropdown.map((item, idx) => (
+                                            {link.dropdown.map((item) => (
                                                 <a
                                                     key={item.name}
                                                     href={item.path}
@@ -147,7 +147,7 @@ const Navbar = () => {
                             className={`relative px-8 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden group ${
                                 isHomePage && !scrolled
                                     ? 'bg-white text-blue-700 hover:bg-blue-50'
-                                    : 'bg-gradient-to-r from-blue-600 to-blue-800 text-white'
+                                    : 'bg-linear-to-r from-blue-600 to-blue-800 text-white'
                             }`}
                         >
                             <span className="relative z-10">Apply Now</span>
@@ -198,7 +198,7 @@ const Navbar = () => {
                         <div className="pt-4">
                             <a
                                 href="/admissions/apply"
-                                className="block w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-xl text-center shadow-lg"
+                                className="block w-full px-6 py-4 bg-linear-to-r from-blue-600 to-blue-800 text-white font-bold rounded-xl text-center shadow-lg"
                             >
                                 Apply Now
                             </a>
