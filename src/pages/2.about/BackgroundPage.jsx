@@ -1,19 +1,23 @@
 import React from 'react'
+import PageHero from '../../components/common/PageHero'
 import HistoryTimeline from '../../components/2.about/HistoryTimeline'
 
 const BackgroundPage = () => {
     return (
-        <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-                <span className="text-bck-blue font-semibold tracking-wider uppercase text-sm bg-blue-50 px-3 py-1 rounded-full">About Us</span>
-                <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mt-4 mb-6">
-                    History & Heritage
-                </h1>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Tracing the footsteps of our founders and the milestones that define our legacy.
-                </p>
+        <div>
+            <PageHero 
+                title="History & Background"
+                subtitle="Celebrating 25 years of academic excellence and moral formation since our foundation in 1999."
+                breadcrumbs={[
+                    { label: 'Home', href: '/' },
+                    { label: 'About', href: '/about' },
+                    { label: 'History & Background', href: '/about/history' }
+                ]}
+            />
+            
+            <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <HistoryTimeline />
             </div>
-            <HistoryTimeline />
         </div>
     )
 }

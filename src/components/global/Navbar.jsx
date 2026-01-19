@@ -22,43 +22,50 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         {
-            name: 'About Us',
+            name: 'About',
             path: '/about',
             dropdown: [
-                { name: 'The School', path: '/about/school' },
-                { name: 'Background', path: '/about/background' },
-                { name: 'Management', path: '/about/management' },
+                { name: 'School Overview', path: '/about' },
+                { name: 'History & Background', path: '/about/history' },
+                { name: 'Administration', path: '/about/administration' },
             ]
         },
         {
-            name: 'Information',
-            path: '/information',
+            name: 'Academics',
+            path: '/academics',
             dropdown: [
-                { name: 'Curriculum', path: '/information/curriculum' },
-                { name: 'School Performance', path: '/information/performance' },
-                { name: 'Co-curricular', path: '/information/co-curricular' },
-                { name: 'Facilities', path: '/information/facilities' },
-                { name: 'Fees Structure', path: '/information/fees' },
+                { name: 'Curriculum & Departments', path: '/academics/curriculum' },
+                { name: 'Academic Performance', path: '/academics/performance' },
+                { name: 'ICT & E-Governance', path: '/academics/ict' },
+            ]
+        },
+        {
+            name: 'Student Life',
+            path: '/student-life',
+            dropdown: [
+                { name: 'Boarding & Day School', path: '/student-life/boarding-day' },
+                { name: 'Sports & Co-Curricular', path: '/student-life/sports' },
+                { name: 'Clubs & Leadership', path: '/student-life/clubs' },
             ]
         },
         {
             name: 'Admissions',
             path: '/admissions',
             dropdown: [
-                { name: 'Requirements', path: '/admissions/requirements' },
-                { name: 'Apply Now', path: '/admissions/apply' },
+                { name: 'Requirements & Fees', path: '/admissions/requirements' },
+                { name: 'How to Apply', path: '/admissions/apply' },
             ]
         },
-        { name: 'Blog', path: '/blog' },
-        { name: 'Contact Us', path: '/contact' },
+        { name: 'News', path: '/news' },
+        { name: 'Contact', path: '/contact' },
     ];
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50">
-            {/* Background overlay that fades in on scroll */}
+            {/* Background overlay */}
             <div 
                 className={`absolute inset-0 bg-white backdrop-blur-lg shadow-md transition-opacity duration-300 ${
-                    scrolled ? 'opacity-100' : 'opacity-0'
+                    isHomePage && !scrolled ? 'opacity-0' : 'opacity-95'
                 }`}
             />
             
@@ -71,18 +78,11 @@ const Navbar = () => {
                             alt="BCK SSS Logo" 
                             className="w-10 h-10 object-contain group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="flex flex-col">
-                            <span className={`font-serif font-bold text-xl leading-tight transition-colors duration-300 ${
-                                isHomePage && !scrolled ? 'text-white' : 'text-gray-900'
-                            }`}>
-                                BCK SSS
-                            </span>
-                            <span className={`text-[10px] font-medium uppercase tracking-wider transition-colors duration-300 ${
-                                isHomePage && !scrolled ? 'text-white/70' : 'text-gray-500'
-                            }`}>
-                                Excellence Since 1999
-                            </span>
-                        </div>
+                        <span className={`font-serif font-bold text-xl leading-tight transition-colors duration-300 ${
+                            isHomePage && !scrolled ? 'text-white' : 'text-gray-700'
+                        }`}>
+                            BCK
+                        </span>
                     </a>
 
                     {/* Desktop Navigation */}
@@ -144,7 +144,7 @@ const Navbar = () => {
                     <div className="hidden lg:flex items-center">
                         <a
                             href="/admissions/apply"
-                            className={`relative px-6 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden group ${
+                            className={`relative px-8 py-3 font-bold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 overflow-hidden group ${
                                 isHomePage && !scrolled
                                     ? 'bg-white text-blue-700 hover:bg-blue-50'
                                     : 'bg-gradient-to-r from-blue-600 to-blue-800 text-white'

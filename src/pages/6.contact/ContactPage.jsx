@@ -1,20 +1,23 @@
 import React from 'react'
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import PageHero from '../../components/common/PageHero'
+import { MapPin, Phone, Mail, Clock, Building2 } from 'lucide-react'
 import contactData from '../../data/contactData.json'
 
 const ContactPage = () => {
     const { contactInfo, form } = contactData;
 
     return (
-        <div className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-                    Get in Touch
-                </h1>
-                <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                    {contactInfo.description}
-                </p>
-            </div>
+        <div>
+            <PageHero 
+                title="Contact Us"
+                subtitle="Get in touch with us. We're here to help and answer any questions you might have."
+                breadcrumbs={[
+                    { label: 'Home', href: '/' },
+                    { label: 'Contact', href: '/contact' }
+                ]}
+            />
+
+            <div className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
 
             <div className="grid lg:grid-cols-2 gap-12">
                 {/* Contact Info */}
@@ -101,6 +104,73 @@ const ContactPage = () => {
                         </button>
                     </form>
                 </div>
+            </div>
+
+            {/* Banking Information Section */}
+            <div className="grid lg:grid-cols-2 gap-12 mt-20 pt-20 border-t border-gray-200">
+                <div>
+                    <h2 className="text-3xl font-serif font-bold text-gray-900 mb-8">Payment & Banking Information</h2>
+                    <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Transparent and convenient payment options for fees and school-related expenses. We work with trusted financial institutions to ensure secure and efficient transactions.
+                    </p>
+                </div>
+
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+                    <div className="flex items-start mb-6">
+                        <Building2 className="w-8 h-8 text-blue-600 mr-4 flex-shrink-0" />
+                        <div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-3">Primary Bank Account</h3>
+                            <div className="space-y-2 text-gray-800">
+                                <p><span className="font-semibold">Bank:</span> Centenary Rural Development Bank</p>
+                                <p><span className="font-semibold">Branch:</span> Entebbe Road Branch</p>
+                                <p><span className="font-semibold">Account Name:</span> Bishop Cipriano Kihangire SSS</p>
+                                <p><span className="font-semibold">Account Type:</span> School Operations Account</p>
+                                <p className="text-sm text-gray-600 mt-4 italic">
+                                    Please contact the school administration for specific account numbers and payment references for tuition and other school fees.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Quick Contact Cards */}
+            <div className="grid md:grid-cols-4 gap-6 mt-20 pt-20 border-t border-gray-200">
+                <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 text-center hover:shadow-xl transition-shadow duration-300">
+                    <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="font-bold text-gray-900 mb-2">Visit Us</h3>
+                    <p className="text-sm text-gray-600">
+                        Bbiina, Luzira<br/>Kampala, Uganda
+                    </p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 text-center hover:shadow-xl transition-shadow duration-300">
+                    <Phone className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="font-bold text-gray-900 mb-2">Call Us</h3>
+                    <p className="text-sm text-gray-600">
+                        +256 414 250 404<br/>
+                        Mon - Fri: 8AM - 5PM
+                    </p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 text-center hover:shadow-xl transition-shadow duration-300">
+                    <Mail className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="font-bold text-gray-900 mb-2">Email Us</h3>
+                    <p className="text-sm text-gray-600">
+                        admissions@bck.ac.ug<br/>
+                        info@bck.ac.ug
+                    </p>
+                </div>
+                
+                <div className="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 text-center hover:shadow-xl transition-shadow duration-300">
+                    <Clock className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                    <h3 className="font-bold text-gray-900 mb-2">School Hours</h3>
+                    <p className="text-sm text-gray-600">
+                        Term Time: 6AM - 6PM<br/>
+                        Admin: 8AM - 5PM
+                    </p>
+                </div>
+            </div>
             </div>
         </div>
     )
