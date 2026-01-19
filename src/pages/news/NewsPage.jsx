@@ -1,6 +1,6 @@
 import React from 'react'
 import PageHero from '../../components/common/PageHero'
-import BlogGrid from '../../components/5.blog/BlogGrid'
+import BlogGrid from '../../components/news/BlogGrid'
 
 const NewsPage = () => {
     return (
@@ -14,7 +14,7 @@ const NewsPage = () => {
                 ]}
             />
             
-            <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <section className="py-20 px-8 sm:px-6 lg:px-24 max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <span className="text-bck-blue font-semibold tracking-wider uppercase text-sm bg-blue-50 px-3 py-1 rounded-full">Latest Updates</span>
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mt-4 mb-6">
