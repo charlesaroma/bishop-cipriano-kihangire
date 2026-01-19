@@ -1,17 +1,19 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import Lottie from 'lottie-react';
+import heroAnimation from '../../assets/hero_anim.json';
 
 const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden bg-[#0a2463]">
       {/* Decorative Circles */}
-      <div className="absolute top-20 right-[20%] w-[500px] h-[500px] bg-yellow-400 rounded-full opacity-90" />
+      <div className="absolute top-20 right-[20%] w-125 h-125 bg-yellow-400 rounded-full opacity-90" />
       <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-blue-500/30 rounded-full" />
       <div className="absolute top-1/2 left-[15%] w-16 h-16 bg-blue-400/40 rounded-full" />
       
       {/* Top gradient for navbar */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[#0a2463] to-transparent z-10" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-[#0a2463] to-transparent z-10" />
 
       {/* Main Content */}
       <div className="relative z-20 h-full flex items-center pt-16">
@@ -71,22 +73,23 @@ const Hero = () => {
               </motion.div>
             </div>
 
-            {/* Right Content - Image */}
+            {/* Right Content - Animation */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="hidden lg:flex justify-end items-center relative"
             >
-              <div className="relative z-10">
-                <img
-                  src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=800"
-                  alt="Student"
-                  className="w-[400px] h-[500px] object-cover rounded-3xl shadow-2xl"
+              <div className="relative z-10 w-full max-w-md h-125 flex items-center justify-center">
+                <Lottie
+                  animationData={heroAnimation}
+                  loop={true}
+                  autoplay={true}
+                  className="w-full h-full"
                 />
               </div>
               
-              {/* Decorative element behind image */}
+              {/* Decorative element behind animation */}
               <div className="absolute top-10 right-0 w-24 h-24 bg-yellow-400 rounded-full opacity-80" />
             </motion.div>
 

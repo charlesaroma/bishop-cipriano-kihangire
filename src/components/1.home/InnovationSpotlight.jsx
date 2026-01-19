@@ -1,31 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Cpu, Globe, Lightbulb, Microscope } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const InnovationSpotlight = () => {
-    const innovations = [
-        {
-            icon: Cpu,
-            title: 'Smart Classrooms',
-            desc: 'Interactive digital learning environment.'
-        },
-        {
-            icon: Globe,
-            title: 'Global Exchange',
-            desc: 'Connecting our students with the world.'
-        },
-        {
-            icon: Microscope,
-            title: 'STEM Research',
-            desc: 'Advanced science and technology labs.'
-        },
-        {
-            icon: Lightbulb,
-            title: 'Creative Arts',
-            desc: 'Fostering innovation through expression.'
-        }
-    ];
-
     return (
         <section className="py-32 bg-white">
             <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-24">
@@ -51,20 +28,6 @@ const InnovationSpotlight = () => {
                             <p className="text-xl text-gray-600 leading-relaxed font-medium first-letter:text-6xl first-letter:font-black first-letter:text-blue-700 first-letter:mr-3 first-letter:float-left">
                                 Education is evolving, and so are we. At Bishop Cipriano Kihangire SSS, we bridge the gap between traditional values and modern innovation, preparing students for a rapidly changing global landscape.
                             </p>
-                        </div>
-
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-8">
-                            {innovations.map((item, idx) => (
-                                <div key={idx} className="group cursor-default border-t border-gray-100 pt-6">
-                                    <item.icon className="w-6 h-6 text-blue-700 mb-4 transition-transform duration-300 group-hover:scale-110" />
-                                    <h4 className="text-lg font-black text-gray-900 uppercase tracking-tight mb-2">
-                                        {item.title}
-                                    </h4>
-                                    <p className="text-sm text-gray-500 font-medium leading-snug">
-                                        {item.desc}
-                                    </p>
-                                </div>
-                            ))}
                         </div>
 
                         <button className="flex items-center gap-2 text-blue-700 font-black text-xs uppercase tracking-[0.2em] group">
