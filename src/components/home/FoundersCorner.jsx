@@ -10,9 +10,9 @@ const FoundersCorner = () => {
   }
 
   return (
-    <section className="py-20 px-8 sm:px-6 lg:px-24 bg-linear-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center space-y-8">
+    <section className="py-20 bg-linear-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
+      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-24">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
           <span className="text-sm font-semibold uppercase tracking-widest text-blue-200">Founder's Wisdom</span>
 
           <blockquote className="space-y-4">

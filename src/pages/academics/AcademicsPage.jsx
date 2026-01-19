@@ -7,13 +7,29 @@ import ICTSection from '../../components/academics/ICTSection'
 
 const AcademicsPage = ({ section }) => {
     const titles = {
-        'curriculum': { title: 'Curriculum', subtitle: 'Our comprehensive academic programs designed to develop well-rounded students.' },
-        'departments': { title: 'Departments', subtitle: 'Exploring our specialized departments and academic divisions.' },
-        'performance': { title: 'Academic Performance', subtitle: 'Excellence in achievement: Our students succeed and thrive.' },
-        'ict': { title: 'E-Governance & ICT', subtitle: 'Leveraging technology for transparency, innovation, and digital leadership.' }
+        'overview': { 
+            title: 'Academics', 
+            subtitle: 'Excellence in education: Nurturing minds and hearts for a brighter future.'
+        },
+        'curriculum': { 
+            title: 'Curriculum', 
+            subtitle: 'Our comprehensive academic programs designed to develop well-rounded students.'
+        },
+        'departments': { 
+            title: 'Departments', 
+            subtitle: 'Exploring our specialized departments and academic divisions.'
+        },
+        'performance': { 
+            title: 'Academic Performance', 
+            subtitle: 'Excellence in achievement: Our students succeed and thrive.'
+        },
+        'ict': { 
+            title: 'E-Governance & ICT', 
+            subtitle: 'Leveraging technology for transparency, innovation, and digital leadership.'
+        }
     }
 
-    const pageInfo = titles[section] || titles['curriculum']
+    const pageInfo = titles[section] || titles['overview']
 
     const renderContent = () => {
         switch (section) {

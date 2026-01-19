@@ -9,13 +9,29 @@ import StudentLifeOverview from '../../components/student-life/StudentLifeOvervi
 
 const StudentLifePage = ({ section }) => {
     const titles = {
-        'boarding': { title: 'Boarding Section', subtitle: 'A home away from home providing exceptional residential care and community.' },
-        'day-school': { title: 'Day Scholar Section', subtitle: 'Flexibility and excellence for local students with full access to all facilities.' },
-        'sports': { title: 'Sports & Co-Curricular', subtitle: 'Developing talents beyond the classroom through diverse programs and athletic excellence.' },
-        'clubs': { title: 'Clubs & Leadership', subtitle: 'Fostering leadership, interests, and talents through student organizations.' }
+        'overview': { 
+            title: 'Student Life', 
+            subtitle: 'Developing the whole person: Spiritual, social, physical, and intellectual growth.'
+        },
+        'boarding': { 
+            title: 'Boarding Section', 
+            subtitle: 'A home away from home providing exceptional residential care and community.'
+        },
+        'day-school': { 
+            title: 'Day Scholar Section', 
+            subtitle: 'Flexibility and excellence for local students with full access to all facilities.'
+        },
+        'sports': { 
+            title: 'Sports & Co-Curricular', 
+            subtitle: 'Developing talents beyond the classroom through diverse programs and athletic excellence.'
+        },
+        'clubs': { 
+            title: 'Clubs & Leadership', 
+            subtitle: 'Fostering leadership, interests, and talents through student organizations.'
+        }
     }
 
-    const pageInfo = titles[section] || titles['boarding']
+    const pageInfo = titles[section] || titles['overview']
 
     const renderContent = () => {
         switch (section) {

@@ -15,11 +15,13 @@ const AdmissionsPage = ({ section = 'apply' }) => {
         ]}
       />
       
-      {section === 'requirements' ? (
-        <RequirementsSection />
-      ) : (
-        <ApplicationSection />
-      )}
+      <div className="py-20 px-8 sm:px-6 lg:px-24 max-w-7xl mx-auto">
+        {section === 'requirements' ? (
+          <RequirementsSection />
+        ) : (
+          <ApplicationSection />
+        )}
+      </div>
     </div>
   )
 }

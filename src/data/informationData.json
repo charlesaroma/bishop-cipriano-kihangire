@@ -63,6 +63,21 @@
         "highlights": [
             "Best performing school in Nakawa Division for 5 consecutive years.",
             "Produced top students in Mathematics and Sciences nationally."
+        ],
+        "uceResults": [
+            { "year": "2024", "total": "349", "div1": "349 (100% Result One)", "div2": "0", "div3": "0" },
+            { "year": "2023", "total": "293", "div1": "293 (100% Result One)", "div2": "0", "div3": "0" },
+            { "year": "2022", "total": "260", "div1": "251", "div2": "9", "div3": "0" },
+            { "year": "2021", "total": "Data Not Available", "div1": "Data Not Available", "div2": "Data Not Available", "div3": "Data Not Available" },
+            { "year": "2020", "total": "171", "div1": "170", "div2": "1", "div3": "0" }
+        ],
+        "uaceResults": [
+            { "year": "2025", "total": "N/A", "p3": "Results pending (exams usually released in Feb/March)", "p2": "-", "p1": "-", "p0": "-" },
+            { "year": "2024", "total": "268", "p3": "243", "p2": "23", "p1": "2", "p0": "0" },
+            { "year": "2023", "total": "244", "p3": "216", "p2": "26", "p1": "1", "p0": "1" },
+            { "year": "2022", "total": "~250", "p3": "Data not fully specified", "p2": "-", "p1": "-", "p0": "-" },
+            { "year": "2021", "total": "N/A", "p3": "(Exams delayed/combined due to COVID-19)", "p2": "-", "p1": "-", "p0": "-" },
+            { "year": "2020", "total": "232", "p3": "170", "p2": "55", "p1": "7", "p0": "0" }
         ]
     },
     "cocurricular": {

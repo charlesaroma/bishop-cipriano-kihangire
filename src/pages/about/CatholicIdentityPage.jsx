@@ -27,7 +27,7 @@ const CatholicIdentityPage = () => {
                             Founded by the late Reverend Father John Scalabrini, our institution continues to embody the Scalabrinian values of love, compassion, and dedication to education. We believe that true education nurtures not just the mind, but the heart and soul.
                         </p>
                     </div>
-                    <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
+                    <div className="bg-linear-to-br from-blue-50 to-blue-100 rounded-2xl p-8">
                         <div className="space-y-6">
                             <div className="border-l-4 border-blue-600 pl-6">
                                 <h3 className="text-xl font-bold text-gray-900 mb-2">Our Motto</h3>

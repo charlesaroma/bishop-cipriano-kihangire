@@ -17,8 +17,8 @@ const ImpactStats = () => {
   }
 
   return (
-    <section className="py-20 px-8 sm:px-6 lg:px-24 bg-linear-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 bg-linear-to-b from-white to-blue-50">
+      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-24">
         <h2 className="text-4xl font-serif font-bold text-center text-gray-900 mb-16">
           Our Impact in Numbers
         </h2>
