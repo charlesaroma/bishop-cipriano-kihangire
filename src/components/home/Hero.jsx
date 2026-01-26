@@ -1,64 +1,242 @@
 import React from 'react'
-import AuroraBackground from '../global/AuroraBackground'
+import { motion } from 'framer-motion'
 
+/**
+ * Hero Component - Academic Calm Design System
+ * 
+ * Visual Style:
+ * - Watercolor / soft illustration background
+ * - Soft light, muted color saturation
+ * - Generous white space
+ * - Clear typographic hierarchy
+ * - Minimal motion, purposeful animation
+ * 
+ * Typography:
+ * - H1: Playfair Display 600 (Semi-Bold)
+ * - Body: Inter 400 (Regular)
+ * 
+ * Colors (Hardcoded - No Tailwind config):
+ * - Brand Blue: #003399
+ * - Primary Text: #374151
+ * - Secondary Text: #6B7280
+ * - Canvas: #F9F9FB
+ */
 const Hero = () => {
-  const hero = {
-    badge: 'Celebrating 25 Years of Excellence',
-    title: 'Bishop Cipriano',
-    titleHighlight: 'Kihangire SSS',
-    description: 'Empowering the next generation through holistic education, discipline, and spiritual growth. Join a legacy of academic excellence and moral integrity.',
-    primaryCta: 'Apply for 2025',
-    secondaryCta: 'Watch Our Story'
+  // Animation variants - subtle and purposeful
+  const fadeInUp = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6, ease: 'easeOut' }
   }
 
   return (
-    <div className="relative min-h-screen bg-linear-to-br from-gray-900 via-blue-900 to-gray-900 text-white overflow-hidden">
-      <AuroraBackground />
+    <section className="relative min-h-screen overflow-hidden bg-[#F9F9FB]">
+      {/* Watercolor Background Illustration */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url(/hero-bg.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-8 sm:px-6 lg:px-24 h-screen flex items-center">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="inline-block">
-              <span className="px-4 py-2 bg-blue-500/20 border border-blue-400/50 rounded-full text-sm text-blue-200">
-                {hero.badge}
-              </span>
+      {/* Gradient Overlay for text legibility */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(to bottom, rgba(249, 249, 251, 0.70) 0%, rgba(249, 249, 251, 0.85) 50%, rgba(249, 249, 251, 0.95) 100%)'
+        }}
+      />
+
+      {/* Content Container */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 min-h-screen flex flex-col justify-center items-center text-center pt-24 pb-16">
+        
+        {/* Primary Heading */}
+        <motion.h1 
+          className="text-[#003399] mb-6"
+          style={{ 
+            fontFamily: '"Playfair Display", Georgia, serif',
+            fontSize: 'clamp(2.5rem, 6vw, 3.5rem)',
+            fontWeight: 600,
+            letterSpacing: '-0.02em',
+            lineHeight: 1.15
+          }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          Admissions & Fees
+        </motion.h1>
+
+        {/* Section Divider */}
+        <motion.div 
+          className="w-16 h-px bg-[#E5E7EB] my-6"
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        />
+
+        {/* Required Documentation Section */}
+        <motion.div 
+          className="max-w-2xl mx-auto mt-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <h2 
+            className="text-[#374151] mb-4"
+            style={{ 
+              fontFamily: '"Playfair Display", Georgia, serif',
+              fontSize: '1.25rem',
+              fontWeight: 600
+            }}
+          >
+            Required Documentation
+          </h2>
+          
+          <p 
+            className="text-[#6B7280] mb-8"
+            style={{ 
+              fontFamily: '"Inter", sans-serif',
+              fontSize: '1rem',
+              lineHeight: 1.7
+            }}
+          >
+            To process an application, the following must be submitted digitally or in person:
+          </p>
+
+          {/* Documentation List */}
+          <div className="space-y-4 text-left">
+            <div className="flex items-start gap-4">
+              <span className="text-2xl">📷</span>
+              <p 
+                className="text-[#374151]"
+                style={{ fontFamily: '"Inter", sans-serif', fontSize: '1rem' }}
+              >
+                <strong className="text-[#003399]">Exactly 3 (Three)</strong> passport-sized photographs
+              </p>
             </div>
-
-            <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight">
-              {hero.title}{' '}
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-cyan-300">
-                {hero.titleHighlight}
-              </span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl">
-              {hero.description}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <a href="/admissions/apply" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-colors">
-                {hero.primaryCta}
-              </a>
-              <button className="px-8 py-4 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 rounded-lg font-semibold transition-colors">
-                {hero.secondaryCta}
-              </button>
+            
+            <div className="flex items-start gap-4">
+              <span className="text-2xl">📋</span>
+              <p 
+                className="text-[#374151]"
+                style={{ fontFamily: '"Inter", sans-serif', fontSize: '1rem' }}
+              >
+                <strong className="text-[#003399]">Previous year's</strong> original result slips
+              </p>
+            </div>
+            
+            <div className="flex items-start gap-4">
+              <span className="text-2xl">🏥</span>
+              <p 
+                className="text-[#374151]"
+                style={{ fontFamily: '"Inter", sans-serif', fontSize: '1rem' }}
+              >
+                <strong className="text-[#003399]">Completed Medical Forms</strong>
+              </p>
             </div>
           </div>
+        </motion.div>
 
-          <div className="hidden lg:block">
-            <div className="relative w-full h-96 bg-linear-to-br from-blue-500/20 to-purple-500/20 rounded-2xl border border-blue-400/30 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl mb-4">🏫</div>
-                <p className="text-gray-300">Bishop Cipriano Kihangire</p>
-                <p className="text-sm text-gray-400">Senior Secondary School</p>
-              </div>
+        {/* Section Divider with dots */}
+        <motion.div 
+          className="flex items-center justify-center gap-2 my-10"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-[#6B7280]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#6B7280]" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#6B7280]" />
+        </motion.div>
+
+        {/* Fees Structure Card */}
+        <motion.div 
+          className="
+            w-full max-w-2xl mx-auto
+            bg-white/80 backdrop-blur-[20px]
+            rounded-xl border border-[#E5E7EB]
+            p-8
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        >
+          <h3 
+            className="text-[#374151] text-center mb-6"
+            style={{ 
+              fontFamily: '"Playfair Display", Georgia, serif',
+              fontSize: '1.5rem',
+              fontWeight: 600
+            }}
+          >
+            2025 Fees Structure:
+          </h3>
+
+          <div className="space-y-4">
+            <div className="flex items-baseline gap-2 flex-wrap justify-center">
+              <span className="text-[#6B7280]" style={{ fontFamily: '"Inter", sans-serif' }}>
+                &gt; Boarding Students:
+              </span>
+              <span 
+                className="text-[#003399] font-semibold"
+                style={{ fontFamily: '"Inter", sans-serif', fontSize: '1.125rem' }}
+              >
+                UGX 1,415,000
+              </span>
+              <span 
+                className="text-[#6B7280] italic text-sm"
+                style={{ fontFamily: '"Inter", sans-serif' }}
+              >
+                (One million, four hundred and fifteen thousand Uganda Shillings)
+              </span>
             </div>
           </div>
-        </div>
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.div
+          className="mt-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.9 }}
+        >
+          <a
+            href="/admissions/apply"
+            className="
+              inline-flex items-center justify-center
+              px-8 py-4
+              bg-[#003399] text-white
+              text-base font-medium
+              rounded-xl
+              shadow-[0_4px_14px_rgba(0,51,153,0.25)]
+              hover:bg-[#002366]
+              hover:shadow-[0_6px_20px_rgba(0,51,153,0.35)]
+              transition-all duration-200
+            "
+            style={{ fontFamily: '"Inter", sans-serif' }}
+          >
+            Begin Your Application
+          </a>
+        </motion.div>
+
+        {/* Silver Jubilee Badge */}
+        <motion.p 
+          className="mt-8 text-[#6B7280]"
+          style={{ 
+            fontFamily: '"Inter", sans-serif',
+            fontSize: '0.875rem'
+          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 1.1 }}
+        >
+          Celebrating 25 (Twenty-five) years of Academic Excellence
+        </motion.p>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-white to-transparent opacity-5"></div>
-    </div>
+    </section>
   )
 }
 
