@@ -1,42 +1,49 @@
 import React from 'react'
 import { Users, Award, BookOpen, GraduationCap } from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const ImpactStats = () => {
   const impactStats = [
-    { id: 1, label: 'Total Enrollment', value: '2,750+', desc: 'Students', iconKey: 'users' },
-    { id: 2, label: 'Active Scholarships', value: '126', desc: 'For 2025', iconKey: 'graduationCap' },
-    { id: 3, label: 'Alumni Base', value: '12,000+', desc: 'Since 1999', iconKey: 'bookOpen' },
-    { id: 4, label: 'National Ranking', value: 'Top 10%', desc: 'UCE Results', iconKey: 'award' }
+    { id: 1, label: 'Current Enrollment', value: '2,750+', desc: 'Learners', icon: Users },
+    { id: 2, label: 'University Acceptance', value: '98%', desc: 'Success Rate', icon: GraduationCap },
+    { id: 3, label: 'Alumni Network', value: '12k+', desc: 'Global Community', icon: BookOpen },
+    { id: 4, label: 'National Ranking', value: 'Top 10', desc: 'Consistently', icon: Award }
   ]
 
-  const iconMap = {
-    users: Users,
-    award: Award,
-    bookOpen: BookOpen,
-    graduationCap: GraduationCap
-  }
-
   return (
-    <section className="py-20 bg-linear-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-24">
-        <h2 className="text-4xl font-serif font-bold text-center text-gray-900 mb-16">
-          Our Impact in Numbers
-        </h2>
+    <section className="py-24 bg-[#F9F9FB] relative overflow-hidden">
+        {/* Subtle Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" 
+             style={{ backgroundImage: 'radial-gradient(#003399 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {impactStats.map((stat) => {
-            const Icon = iconMap[stat.iconKey] || Users
-            return (
-              <div key={stat.id} className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow">
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-blue-100 rounded-lg">
-                    <Icon className="w-8 h-8 text-blue-600" />
-                  </div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+        
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
+          {impactStats.map((stat, index) => {
+             const Icon = stat.icon
+             return (
+              <motion.div 
+                key={stat.id} 
+                className={`text-center px-4 ${index > 1 ? 'pt-12 lg:pt-0' : ''}`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <div className="inline-flex items-center justify-center w-12 h-12 mb-6 rounded-full bg-[#003399]/5 text-[#003399]">
+                    <Icon className="w-5 h-5" />
                 </div>
-                <p className="text-sm text-gray-600 mb-2">{stat.label}</p>
-                <p className="text-4xl font-bold text-bck-blue mb-1">{stat.value}</p>
-                <p className="text-gray-600">{stat.desc}</p>
-              </div>
+                <div className="text-4xl md:text-5xl font-bold text-[#003399] mb-2 font-serif tracking-tight">
+                    {stat.value}
+                </div>
+                <div className="text-gray-900 font-medium text-lg mb-1">
+                    {stat.label}
+                </div>
+                <div className="text-gray-500 text-sm uppercase tracking-wide">
+                    {stat.desc}
+                </div>
+              </motion.div>
             )
           })}
         </div>

@@ -26,7 +26,7 @@ const PageHero = ({ title, subtitle, image, breadcrumbs }) => {
     const heroImage = image || defaultImage;
     
     return (
-        <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F9F9FB]">
+        <section className="relative min-h-[60vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F9F9FB] pt-28 lg:pt-32">
             {/* Background Image - Watercolor Style */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"

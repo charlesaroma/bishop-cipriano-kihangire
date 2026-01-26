@@ -3,6 +3,7 @@ import Hero from '../../components/home/Hero'
 import ImpactStats from '../../components/home/ImpactStats'
 import InnovationSpotlight from '../../components/home/InnovationSpotlight'
 import FoundersCorner from '../../components/home/FoundersCorner'
+import NewsPreview from '../../components/home/NewsPreview'
 
 const HomePage = () => {
     return (
@@ -10,6 +11,7 @@ const HomePage = () => {
             <Hero />
             <ImpactStats />
             <InnovationSpotlight />
+            <NewsPreview />
             <FoundersCorner />
         </>
     )
