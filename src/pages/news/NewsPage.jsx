@@ -1,6 +1,6 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
-import BlogGrid from '../../components/news/BlogGrid'
+import PageHero from '../../layout/common/PageHero'
+import BlogGrid from '../../components/blog/BlogGrid'
 
 const NewsPage = () => {
     return (

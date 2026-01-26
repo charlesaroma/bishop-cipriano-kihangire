@@ -1,7 +1,7 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
-import RequirementsSection from '../../components/admissions/RequirementsSection'
-import ApplicationSection from '../../components/admissions/ApplicationSection'
+import PageHero from '../../layout/common/PageHero'
+import RequirementsSection from '../../components/information/admissions/RequirementsSection'
+import ApplicationSection from '../../components/information/admissions/ApplicationSection'
 
 const AdmissionsPage = ({ section = 'apply' }) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FileText, CheckCircle2, AlertTriangle } from 'lucide-react'
-import admissionsData from '../../data/admissionsData.json'
+import admissionsData from '../../../data/admissionsData.json'
 
 /**
  * RequirementsSection - Academic Calm Design System

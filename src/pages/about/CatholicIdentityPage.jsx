@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
+import PageHero from '../../layout/common/PageHero'
 import { motion } from 'framer-motion'
 import { Shield, Sparkles, Heart, Users, Check, Church } from 'lucide-react'
 

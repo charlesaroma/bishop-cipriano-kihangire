@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Send, CheckCircle, AlertCircle } from 'lucide-react'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
-import admissionsData from '../../data/admissionsData.json'
+import admissionsData from '../../../data/admissionsData.json'
 
 const ApplicationForm = () => {
   const { formSections } = admissionsData

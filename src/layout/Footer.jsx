@@ -7,13 +7,14 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#002366] text-white overflow-hidden relative">
+
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-400/5 rounded-full blur-[80px] pointer-events-none translate-y-1/3 -translate-x-1/3" />
 
       {/* Main Footer Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 pt-16 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-12">
           
           {/* Brand Column (Span 4) */}
           <div className="lg:col-span-4 space-y-6">
@@ -114,7 +115,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Banking / Utility (Span 2) - Optional/Condensed */}
+          {/* Banking / Utility (Span 2) */}
            <div className="lg:col-span-2">
             <h4 className="text-lg font-semibold text-white mb-6 font-serif">Banking</h4>
              <div className="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 group">
@@ -128,12 +129,12 @@ const Footer = () => {
 
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-blue-100/50 text-center md:text-left">
+        {/* Divider & Copyright */}
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-white/80">
+            <p className="text-sm text-center md:text-left">
             &copy; {currentYear} Bishop Cipriano Kihangire S.S.S. All rights reserved.
             </p>
-            <p className="text-xs text-blue-100/30 text-center md:text-right uppercase tracking-wider font-medium">
+            <p className="text-xs text-center md:text-right uppercase tracking-wider font-medium opacity-80">
             For Unity, Academic Excellence and Moral Uprightness
             </p>
         </div>

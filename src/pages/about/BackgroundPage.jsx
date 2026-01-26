@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
+import PageHero from '../../layout/common/PageHero'
 import HistoryTimeline from '../../components/about/HistoryTimeline'
 
 const BackgroundPage = () => {

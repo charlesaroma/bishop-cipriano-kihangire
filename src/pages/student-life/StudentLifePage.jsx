@@ -1,11 +1,11 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
-import BoardingSection from '../../components/student-life/BoardingSection'
-import DayScholarSection from '../../components/student-life/DayScholarSection'
-import SportsSection from '../../components/student-life/SportsSection'
-import ClubsSection from '../../components/student-life/ClubsSection'
-import AnthemSection from '../../components/student-life/AnthemSection'
-import StudentLifeOverview from '../../components/student-life/StudentLifeOverview'
+import PageHero from '../../layout/common/PageHero'
+import BoardingSection from '../../components/information/student-life/BoardingSection'
+import DayScholarSection from '../../components/information/student-life/DayScholarSection'
+import SportsSection from '../../components/information/student-life/SportsSection'
+import ClubsSection from '../../components/information/student-life/ClubsSection'
+import AnthemSection from '../../components/information/student-life/AnthemSection'
+import StudentLifeOverview from '../../components/information/student-life/StudentLifeOverview'
 
 const StudentLifePage = ({ section }) => {
     const titles = {

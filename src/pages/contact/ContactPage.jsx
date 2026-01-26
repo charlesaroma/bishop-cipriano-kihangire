@@ -1,5 +1,5 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
+import PageHero from '../../layout/common/PageHero'
 import ContactInfo from '../../components/contact/ContactInfo'
 import ContactForm from '../../components/contact/ContactForm'
 

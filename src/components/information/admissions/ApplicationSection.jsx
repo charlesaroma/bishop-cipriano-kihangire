@@ -1,7 +1,7 @@
 import React from 'react'
 import { CheckCircle2, AlertTriangle } from 'lucide-react'
-import ApplicationForm from '../../components/admissions/ApplicationForm'
-import admissionsData from '../../data/admissionsData.json'
+import ApplicationForm from './ApplicationForm'
+import admissionsData from '../../../data/admissionsData.json'
 
 const ApplicationSection = () => {
     const { requirements } = admissionsData;

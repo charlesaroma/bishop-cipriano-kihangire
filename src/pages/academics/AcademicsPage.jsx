@@ -1,9 +1,9 @@
 import React from 'react'
-import PageHero from '../../components/common/PageHero'
-import CurriculumView from '../../components/academics/CurriculumView'
-import PerformanceStats from '../../components/academics/PerformanceStats'
-import AcademicDepartments from '../../components/academics/AcademicDepartments'
-import ICTSection from '../../components/academics/ICTSection'
+import PageHero from '../../layout/common/PageHero'
+import CurriculumView from '../../components/information/CurriculumView'
+import PerformanceStats from '../../components/information/PerformanceStats'
+import AcademicDepartments from '../../components/information/AcademicDepartments'
+import ICTSection from '../../components/information/ICTSection'
 
 const AcademicsPage = ({ section }) => {
     const titles = {
